@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Starjedi';
+    src: url('/fonts/Starjedi.ttf') format('truetype');
+}
+
+@import url('https://fonts.google.com/?query=montserrat+');
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+h1 {
+    font-family: 'Starjedi', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: text-shadow 0.5s ease-in-out;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    cursor: default;
+}
+
+#character-details-container{
+    width: 100%;
+}
+
+.character-details-container {
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.character-details-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    margin-top: 5em;
+}
+
+.character-image {
+    width: 20em;
+    height: auto;
+    text-align: right;
+}
+
+#info-image{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
+
+.info-character{
+    margin-left: 2em;
+    text-align: left;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        height: 10vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .character-details-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr ;
+        margin-top: 3em;
+    }
+    
+    .character-image {
+        width: 23em;
+        height: auto;
+        text-align: center;
+        margin-top: -1em;
+    }
+    
+    #info-image{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin-left: 3.8em;
+    }
+    
+    .info-character{
+        margin-top: 1.5em;
+        margin-left: 3.5em;
+        text-align: left;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-right: 2em;
+    }
+}

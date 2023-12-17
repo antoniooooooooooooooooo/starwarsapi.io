@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Archive</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+   <h1><a href="index.html">Star Wars Archive</a></h1>
+
+   <div id="controls-container">
+
+    <input type="text" id="search-input" placeholder="Search by name..." oninput="searchCharacters()">
+
+    <select id="movie-dropdown" onchange="fetchCharactersByMovie()">
+        <option disabled selected value="">Filter by Episode</option>
+        <option value="4">Episode I: The Phantom Menace</option>
+        <option value="5">Episode II: Attack of the Clones</option>
+        <option value="6">Episode III: Revenge of the Sith</option>
+        <option value="1">Episode IV: A New Hope</option>
+        <option value="2">Episode V: The Empire Strikes Back</option>
+        <option value="3">Episode VI: Return of the Jedi</option>
+    </select>
+
+    <button id="sort-button" onclick="sortCharactersAlphabetically()">A - Z</button>
+</div>
+
+    <div id="people-container"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

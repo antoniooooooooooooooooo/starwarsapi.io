@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Starjedi';
+    src: url('/fonts/Starjedi.ttf') format('truetype');
+}
+
+@import url('https://fonts.google.com/?query=montserrat+');
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000vh;
+}
+
+h1 {
+    font-family: 'Starjedi', sans-serif;
+    color: #fff;
+    letter-spacing: 1.5px;
+    transition: text-shadow 0.5s ease-in-out;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    cursor: default;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#controls-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#movie-dropdown,
+    #search-input,
+    #sort-button {
+    margin-right: 10px;
+}
+
+#search-input {
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    outline: none;
+    margin-right: 34em;
+}
+
+#movie-dropdown {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#sort-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#sort-button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(68, 203, 253, 0.8);
+    cursor: pointer;
+}
+
+#people-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.person-card {
+    border: 1px solid #000000;
+    padding: 16px;
+    margin: 16px;
+    width: calc(20% - 32px);
+    text-align: center;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: text-shadow 0.9s ease-in-out;
+    color: #ffffff;
+}
+
+.person-card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(68, 203, 253, 0.8);
+    cursor: pointer;
+}
+
+
+.person-card h3{
+font-weight: 600;
+}
+
+.person-card a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.person-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1000vh;
+        overflow-x: hidden;
+    }
+
+    #controls-container {
+        display: inline-block;
+        align-items: center;
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+
+    #sort-button {
+        margin-left: 4em;
+    }
+
+    #search-input {
+        margin-left: 2.1em;
+        margin-right: 0;
+    }
+
+    #movie-dropdown {
+        margin-left: 2.1em;
+        margin-right: 0;
+    }
+
+    #people-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .person-card {
+        border: 1px solid #000000;
+        padding: 16px;
+        margin: 16px;
+        width: calc(35% - 32px);
+        text-align: center;
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: text-shadow 0.9s ease-in-out;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .person-card h3{
+        font-weight: 600;
+        }
+        
+        .person-card a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        .person-image {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+}
