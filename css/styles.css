@@ -1,9 +1,8 @@
-@font-face {
-    font-family: 'Starjedi';
-    src: url('/fonts/Starjedi.ttf') format('truetype');
-}
+
 
 @import url('https://fonts.google.com/?query=montserrat+');
+
+@import url('https://fonts.cdnfonts.com/css/star-jedi');
 
 body {
     background-color: #000000;
@@ -16,7 +15,7 @@ body {
 }
 
 h1 {
-    font-family: 'Starjedi', sans-serif;
+    font-family: 'Star Jedi', sans-serif;
     color: #fff;
     letter-spacing: 1.5px;
     transition: text-shadow 0.5s ease-in-out;
@@ -31,6 +30,7 @@ h1 a {
     text-decoration: none;
     color: #fff;
 }
+
 
 #controls-container {
     display: flex;
