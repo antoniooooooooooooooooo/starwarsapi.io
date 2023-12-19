@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -54,6 +55,7 @@ h1:hover {
     grid-row-end: 2;
     grid-column-start: 5;
     grid-column-end: 5;
+    margin-right: 2em;
 }
 
 .info-character{
